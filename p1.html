@@ -1,0 +1,313 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .Metric {
+            text-align: center;
+            background-color: #B3B3B3;
+            border-radius: 10px;
+            height: 50px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .value {
+            text-align: center;
+            background-color: #B3B3B3;
+            border-radius: 10px;
+            height: 50px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .Description {
+            text-align: center;
+            background-color: #B3B3B3;
+            border-radius: 10px;
+            height: 50px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        body {
+            background-color: #2B2B2B;
+            justify-content: center;
+            animation-name: color;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            position: relative;
+            margin: 0%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            height: 50px;
+            width: 110px;
+            transition: all 0.5s ease;
+            margin-top: 5px;
+        }
+
+        li {
+            height: 40px;
+            width: 110px;
+            border-bottom-color: red;
+            height: 50px;
+            width: 120px;
+            text-align: center;
+            transition: all 0.5s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
+        }
+
+        li:hover {
+            border-bottom: 2px solid red;
+            border-radius: 15px;
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        ul li {
+            list-style: none;
+            border-bottom-color: red;
+        }
+
+        header {
+            display: flex;
+            gap: 600px;
+            margin: 0px;
+            padding: 10px;
+            margin-bottom: 0px;
+            box-shadow: 5px 5px 5px #D4D4D4;
+        }
+
+        main {
+            color: white;
+            margin-top: 0px;
+            margin: 0px;
+        }
+
+        .box {
+            justify-content: space-evenly;
+            margin-top: 100px;
+            display: flex;
+        }
+
+        .card {
+            height: 540px;
+            width: 330px;
+            border: 1px solid black;
+            align-items: center;
+            text-align: center;
+            border-radius: 15px;
+            justify-content: center;
+            flex-direction: column;
+            transition: all 0.5s ease;
+            background-color: #B3B3B3;
+
+        }
+
+        .card:hover {
+            transform: scale(1.1) translateY(5px) rotate(8deg);
+        }
+
+        img {
+            height: 250px;
+            width: 300px;
+            margin-top: 15px;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .text {
+            background-color: white;
+            color: black;
+            margin-top: -20px;
+            width: 300px;
+            margin-left: 15px;
+            border-radius: 0px 0px 15px 15px;
+        }
+
+        header a:hover {
+            border-bottom: 2px solid red;
+            transform: scale(1.1);
+        }
+
+        b {
+            color: chocolate;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #B3B3B3;
+            width: 900px;
+            display: flex;
+            justify-content: center;
+            border-radius: 0px 50px 50px 0px;
+            font-size: 40px;
+            color: gold;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            width: 600px;
+            background-color: #B3B3B3;
+            border-radius: 0px 50px 50px 0px;
+            font-size: 30px;
+            color: gold;
+        }
+
+        .text1 {
+            background-color: aliceblue;
+            color: black;
+            text-align: center;
+            border-radius: 10px;
+            height: 300px;
+            width: 300px;
+        }
+
+        .text1 div {
+            margin: 25px;
+        }
+
+        .b1 ul {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="Movie Explorer" style="margin-top: 20px; margin-left: 100px;">Movie Explorer</a>
+        <ul style="margin-top: 20px;">
+            <li><a href="./p1.html">Home</a></li>
+            <li><a href="./p4.html">Catalogue</a></li>
+            <li><a href="./p2.html">Movie Details</a></li>
+            <li><a href="./p3.html">About & Contact</a></li>
+        </ul>
+        <hr>
+        <hr>
+    </header>
+    <main>
+        <h1>Welcome to Movie Explorer Portal</h1>
+        <br>
+        <p>Discover top-rated cinematic masterpieces, explore detailed cast profiles, and browse movies across various
+            genres. Designed for B.Tech Web Designing Lab.</p>
+        <div class="box">
+            <div class="card">
+                <img src="./images.jpg" alt="Cannot load image" height="250px" width="300px">
+                <div class="text">
+                    <h3>Inception</h3>
+                    <p><b>Genre:</b>Science Fiction | <b>Duration:</b>148 min</p>
+                    <p><b>Release Date:</b>2010 | <b>Rating:</b>★ 8.8 / 10</p>
+                    <a href="Read Full Detils" style="color: red; margin-bottom: 10px;">Read Full Details</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./download.jpg" alt="Cannot load image" height="250px" width="300px">
+                <div class="text">
+                    <h3>The Dark Knight</h3>
+                    <p><b>Genre:</b>Action/Crime | <b>Duration:</b>152 min</p>
+                    <p><b>Release Date:</b>2008 | <b>Rating:</b>★ 9.0 / 10</p>
+                    <p>When the menace known as the Joker wreaks havoc and chaos on Gotham City, Batman must accept one
+                        of
+                        the greatest psychological tests of his ability.</p>
+                    <a href="Read Full Deatils" style="color: red;">Read Full Deatils</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./download (1).jpg" alt="Cannot load image">
+                <div class="text">
+                    <h3>Interstellar</h3>
+                    <p><b>Genre:</b>Sci-Fi / Drama | <b>Duration:</b>169 min</p>
+                    <p><b>Release Date:</b>2014 | <b>Rating:</b>★ 8.7 / 10</p>
+                    <p>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's
+                        survival on
+                        a
+                        new
+                        habitable planet.</p>
+                    <a href="Read Full Deatils" style="color: red;">Read Full Deatils</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./download (2).jpg" alt="Cannot load image">
+                <div class="text">
+                    <h3>Pulp Fiction</h3>
+                    <p><b>Genre:</b>Crime / Drama | <b>Duration:</b>154 min</p>
+                    <p><b>Release Date:</b>1994 | <b>Rating:</b>★ 8.9 / 10</p>
+                    <p>The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits
+                        intertwine
+                        in
+                        four
+                        tales of violence and redemption.</p>
+                    <a href="Read Full Details" style="color: red;">Read Full Deatils</a>
+                </div>
+            </div>
+        </div>
+        <h2>Portal Summary Analytics</h2>
+        <div class="content">
+            <div class="text1">
+                <div class="Metric"><b>Metric</b></div>
+                <div>Total Catalogue Movie</div>
+                <div>Average User Rating</div>
+                <div>Available Genres</div>
+                <div>Supported Languages</div>
+            </div>
+            <div class="text1">
+                <div class="value"><b>value</b></div>
+                <div>8 titles</div>
+                <div>8.7 / 10</div>
+                <div>5 categoires</div>
+                <div>English, Japanese, Korean,</div>
+            </div>
+            <div class="text1">
+                <div class="Description"><b>Description</b></div>
+                <div>Curated database entries available for static browsing</div>
+                <div>Calculated across all listed titles</div>
+                <div>Action, Sci-Fi, Crime, Drama, Animation</div>
+                <div>International film metadata support</div>
+            </div>
+        </div>
+        </div>
+        <h2>Browse by Categories</h2>
+        <div class="b1">
+            <ul>
+                <li><a href="Action Movies">Action Movie</a></li>
+                <li><a href="Science Fiction">Science Fiction</a></li>
+                <li><a href="Crime & Mystery">Crime & Mystery</a></li>
+                <li><a href="Drama & Romance">Drama & Romance</a></li>
+                <li><a href="Animated Mastepieces">Animated Masterpieces</a></li>
+            </ul>
+        </div>
+        <div style="text-align: center;">&copy; 2026 Movie Explorer Portal — B.Tech 1st Year Web Designing Lab
+            Assignment</div>
+        <footer style="text-align: center;">Department of Computer Science & Engineering</footer>
+    </main>
+</body>
+
+</html>

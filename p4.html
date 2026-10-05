@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            margin: 0%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #2B2B2B;
+            color: white;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            gap: 550px;
+            box-shadow: 2px 2px 2px white;
+        }
+
+        header ul {
+            display: flex;
+            gap: 35px;
+        }
+
+        header li {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .name input {
+            height: 40px;
+            width: 200px;
+            background-color: transparent;
+            border-radius: 10px;
+            border: 2px dashed white;
+
+        }
+        .name input:hover{
+            border: 2px dashed red;
+        }
+
+        .check {
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover{
+            transform: scale(1.1) rotate(3deg);
+            border: 2px dashed yellow;
+        }
+
+        button {
+            width: 150px;
+            height: 35px;
+            border: none;
+            background-color: blue;
+            color: aliceblue;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+            transform: scale(0.9);
+        }
+
+        .tt {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 25px;
+        }
+
+        .text {
+            text-align: center;
+            background-color: aliceblue;
+            color: black;
+            width: 300px;
+            border-radius: 0px 0px 20px 20px;
+        }
+
+        .card {
+            width: 350px;
+            height: 600px;
+            background-color: #B3B3B3;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border: 2px dashed red;
+            border-radius: 20px;
+        }
+
+        h3 {
+            color: blue;
+        }
+
+        b {
+            color: chocolate;
+        }
+
+        .g ul li {
+            list-style: none;
+        }
+
+        img {
+            width: 300px;
+            height: 250px;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        header li {
+            width: 150px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+
+        header li:hover {
+            border-bottom: 2px solid white;
+        }
+
+        .g ul {
+            display: flex;
+            gap: 25px;
+            color: aqua;
+            justify-content: center;
+        }
+        .g ul a {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="" style="display: flex; justify-content: center; align-items: center;">Movie Explorer</a>
+        <ul>
+            <li><a href="./p1.html">Home</a></li>
+            <li><a href="./p4.html">Catalogue</a></li>
+            <li><a href="./p2.html">Movie Detiles</a></li>
+            <li><a href="./p3.html">About & Contact</a></li>
+        </ul>
+    </header>
+    <h1
+        style="width: 600px; background-color: #B3B3B3; text-align: center; border-radius: 0px 50px 50px 0px; color: gold;">
+        Complete
+        Movie Catalogue</h1>
+    <p style="text-align: center; color: blue;">Use the form options below to filter and sort through our film database.
+    </p>
+    <h2
+        style="width: 400px; background-color: #B3B3B3; border-radius: 0px 50px 50px 0px; color: gold; text-align: center;">
+        Filter & Search Options</h2>
+    <form action="" style="margin-left: 40px;">
+        <div class="name">
+            <label for="">Search Title / Director:</label>
+            <input type="text" placeholder="e.g. Nolan, Inception...">
+        </div>
+        <br><br><br>
+        <div class="check">
+            <div>
+                <label for="">Select Genre:</label>
+            </div>
+            <br><br>
+            <div style="display: flex; flex-direction: column;">
+                <label for="">
+                    <input type="radio" checked>
+                    All Genres
+                </label>
+                <label for="">
+                    <input type="radio">
+                    Action
+                </label>
+                <label for="">
+                    <input type="radio">
+                    Science Fiction
+                </label>
+                <label for="">
+                    <input type="radio">
+                    Crime
+                </label>
+                <label for="">
+                    <input type="radio">
+                    Drama
+                </label>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="opt">
+            <label for="">Sort Records By:<label>
+                    <select name="" id=""
+                        style="width: 100px; height: 35px; background-color: transparent; border-radius: 10px; border: 2px solid whitesmoke; color: blue;">
+                        <option value="">Default</option>
+                        <option value="">Next</option>
+                        <option value="">Previous</option>
+                    </select>
+        </div>
+        <br><br>
+        <div class="btn">
+            <button>Apply filters</button>
+            <button>reset</button>
+        </div>
+    </form>
+    <hr>
+    <div class="tt">
+        <h1 style="background-color: #B3B3B3; width: 550px; text-align: center; border-radius: 50px; color: gold;">All
+            Movie Records (8 Items)</h1>
+    </div>
+
+    <br>
+    <div class="box">
+        <div class="card">
+            <img src="./images.jpg" alt="">
+            <div class="text">
+                <h3>Inception (2010)</h3>
+                <p><b>Genre:</b>Science Fiction | <b>Rating:</b>★ 8.8</p>
+                <p><b>Director:</b>Christopher Nolan</p>
+                <p><b>Duration:</b>148 min | <b>Language:</b>English</p>
+                <p> A thief who steals corporate secrets through dream-sharing technology is given the inverse task of
+                    planting an
+                    idea...</p>
+                <a href="">View Details page</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./download.jpg" alt="">
+            <div class="text">
+                <h3>The Dark Knight (2008)</h3>
+                <p><b>Genre:</b> Action | <b>Rating:</b>★ 9.0</p>
+                <p><b>Director:</b>Christopher Nolan</p>
+                <p><b>Duration:</b>152 min | <b>Language:</b>English</p>
+                <p> When the menace known as the Joker wreaks havoc on Gotham City, Batman must accept a great
+                    psychological test...</p>
+                <a href="">View Details page</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./download (1).jpg" alt="">
+            <div class="text">
+                <h3>Intersteller (2014)</h3>
+                <p><b>Genre:</b> Action | <b>Rating:</b>★ 8.7</p>
+                <p><b>Director:</b>Christopher Nolan</p>
+                <p><b>Duration:</b>169 min | <b>Language:</b>English</p>
+                <p>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival...
+                </p>
+                <a href="">View Details page</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./download (2).jpg" alt="">
+            <div class="text">
+                <h3>Pulp Fiction</h3>
+                <p><b>Genre:</b> Crime | <b>Rating:</b>★ 8.9</p>
+                <p><b>Director:</b>Christopher Nolan</p>
+                <p><b>Duration:</b>154 min | <b>Language:</b>English</p>
+                <p>The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence...
+                </p>
+                <a href="">View Details page</a>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="card">
+            <img src="./images (1).jpg" alt="">
+            <div class="text">
+                <h3 style="text-align: center;">The Shawshank Redemption (1994)</h3>
+                <p><b>Genre:</b> Drama | <b>Rating:</b>★ 9.3</p>
+                <p><b>Director:</b>Christopher Nolan</p>
+                <p><b>Duration:</b>142 min | <b>Language:</b>English</p>
+                <p>Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts
+                    of
+                    decency...</p>
+                <a href="">View Details page</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images (2).jpg" alt="">
+            <div class="text">
+                <h3>Spirited Away (2001)</h3>
+                <p><b>Genre:</b> Animation | <b>Rating:</b>★ 8.6</p>
+                <p><b>Director:</b>Christopher Nolan</p>
+                <p><b>Duration:</b>125 min | <b>Language:</b>Japanese</p>
+                <p>During her family's move to the suburbs, a 10-year-old girl wanders into a world ruled by gods and
+                    spirits...</p>
+                <a href="">View Details page</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images (3).jpg" alt="">
+            <div class="text">
+                <h3>The Matrix (1999)</h3>
+                <p><b>Genre:</b> Action / Sci-fi | <b>Rating:</b>★ 8.7</p>
+                <p><b>Director:</b>Christopher Nolan</p>
+                <p><b>Duration:</b>125 min | <b>Language:</b>English</p>
+                <p>A computer hacker learns from mysterious rebels about the true nature of his reality and his role in
+                    the
+                    war...</p>
+                <a href="">View Details page</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images (7).jpg" alt="">
+            <div class="text">
+                <h3>Parasite (2019)</h3>
+                <p><b>Genre:</b> Thriller / Drama | <b>Rating:</b>★ 8.5</p>
+                <p><b>Director:</b>Christopher Nolan</p>
+                <p><b>Duration:</b>132 min | <b>Language:</b>koren</p>
+                <p>Greed and class discrimination threaten the newly formed relationship between a wealthy and destitute
+                    family...</p>
+                <a href="">View Details page</a>
+            </div>
+        </div>
+    </div>
+    <h3 style="text-align: center;">Page Navigation</h3>
+    <p style="text-align: center;">showing page 1 of 2</p>
+    <div class="g">
+        <ul>
+            <li><a href=""><i class="bi bi-chevron-double-left"></i> Previous</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">Next <i class="bi bi-chevron-double-right"></i></a></li>
+        </ul>
+    </div>
+    <br>
+    <p style="text-align: center;"> © 2026 Movie Explorer Portal — B.Tech 1st Year Web Designing Lab Assignment</p>
+</body>
+
+</html>
